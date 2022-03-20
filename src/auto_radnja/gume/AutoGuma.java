@@ -89,7 +89,7 @@ public class AutoGuma {
 	 * @throws java.lang.IllegalArgumentException ako je precnik van opsega
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new IllegalArgumentException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -110,7 +110,7 @@ public class AutoGuma {
 	 * @throws java.lang.IllegalArgumentException ako je sirina van opsega
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new IllegalArgumentException("Sirina van opsega");
 		this.sirina = sirina;
 	}
