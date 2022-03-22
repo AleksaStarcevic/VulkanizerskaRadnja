@@ -5,8 +5,16 @@ import java.util.List;
 
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Predstavlja implementaciju radnje sa gumama.
+ * Ima osnovne operacije dodavanja,pretrage i vracanja
+ * @author aleks
+ * @version 1.1
+ */
 public class VulkanizerskaRadnja implements Radnja {
-
+	/**
+	 * Lista koja sadrzi auto gume
+	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
